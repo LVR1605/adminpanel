@@ -7,7 +7,7 @@ body {
     max-width: 400px;
     margin: 0 auto;
     background-color: #fff;
-    padding: 20px;
+    padding: 5%;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px #888888;
     text-align: center;
@@ -47,3 +47,33 @@ input {
 .btn:hover {
     background-color: #555;
 }
+
+        /* Style the navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px; /* Set the width of the navbar */
+            height: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        /* Style the navbar links */
+        .navbar a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Style the content area */
+        .content {
+            margin-left: 220px; /* Adjust for the width of the navbar */
+            padding: 20px;
+        }
+        .enlarge {
+            font-size: xx-large;
+        }
+        

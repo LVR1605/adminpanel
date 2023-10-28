@@ -2,36 +2,7 @@
 <html>
 <head>
     <title>Admin Dashboard</title>
-    <style>
-        /* Style the navbar */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 200px; /* Set the width of the navbar */
-            height: 100%;
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-        }
-
-        /* Style the navbar links */
-        .navbar a {
-            display: block;
-            margin: 10px 0;
-            text-decoration: none;
-            color: #fff;
-        }
-
-        /* Style the content area */
-        .content {
-            margin-left: 220px; /* Adjust for the width of the navbar */
-            padding: 20px;
-        }
-        .enlarge {
-            font-size: xx-large;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -58,8 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
     logoutButton.addEventListener('click', function(event) {
         event.preventDefault();
 
-        // Redirect to the index.php page when the logout link is clicked
-        window.location.href = "index.php";
+        // Show a confirmation dialog before redirecting
+        const confirmLogout = window.confirm("Are you sure you want to log out?");
+        if (confirmLogout) {
+            // Redirect to the index.php page when the user confirms
+            window.location.href = "index.php";
+        }
     });
 });
 </script>
